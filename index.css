@@ -1,6 +1,11 @@
+*{
+  font-size: medium;
+  margin: auto;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
 .calculator1 button{
-    position: relative;
-    margin-left: 655px;
     display: block;
     width: 100px;
     background-color: #f4f4f4;
@@ -10,8 +15,6 @@
   }
 
 .calculator2 button{
-    position: relative;
-    margin-left: 795px;
     display: block;
     width: 100px;
     background-color: #f4f4f4;
@@ -21,8 +24,6 @@
   }
   
 .calculator3 button{
-    position: relative;
-    margin-left: 925px;
     display: block;
     width: 100px;
     background-color: #f4f4f4;
@@ -32,8 +33,6 @@
   }
 
 .calculator4 button{
-    position: relative;
-    margin-left: 1060px;
     display: block;
     width: 100px;
     background-color: #f4f4f4;
@@ -43,6 +42,9 @@
   }
 
 .clear_but{
+    top: 370px;
+    position: absolute;
+    left: 47.5%;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: large;
     color: rgba(12, 7, 7, 0.658);
@@ -52,27 +54,43 @@
     padding: 10px;
     font-weight: bold; 
   }
-  
+
+.flex{
+  top: 162px;
+  position: absolute;
+  margin-left: 680px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 280px;
+}
+
+.flex2{
+  top: 162px;
+  position: absolute;
+  margin-left: 950px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 280px;
+}
+
 input[type="text"] {
-    width: 30%;
+    position: absolute;
+    left: 36.4%;
+    top: 8%;
+    width: 25.5%;
     height: 38px;
     font-size: 20px;
     border: 2px solid #ccc;
     padding: 10px;
   }
 
-.calc {
-  display: flex;
-}
-
-.calc1 {
-  display: flex;
-}
-
-*{
-  
-  font-size: medium;
-  margin: auto;
-  margin-bottom: 50px;
-  text-align: center;
+.box{
+  position: absolute;
+  left: 35%;
+  border-color: rgba(0, 0, 0, 0.74);
+  width: 560px;
+  height: 373px;
+  border-style: solid;
+  border-radius: 15px;
+  border-width: 3px;
 }

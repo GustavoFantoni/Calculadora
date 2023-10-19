@@ -13,10 +13,11 @@
     </header>
 
     <main>
+    <div class="box"></div>
+
     <section class="principal">
-
         <input type="text" id="result" readonly>
-
+    <div class="flex">
             <div class="calculator1">
                 <button onclick="soma(7)">7</button>
                 <button onclick="soma(4)">4</button>
@@ -30,20 +31,25 @@
                 <button onclick="soma(2)">2</button>
                 <button onclick="soma('.')">.</button>
             </div>
-
+    </div>
+    <div class="flex2">
+        <div class="col-6 col-9">
             <div class="calculator3">
                 <button onclick="soma(9)">9</button>
                 <button onclick="soma(6)">6</button>
                 <button onclick="soma(3)">3</button>
                 <button onclick="soma('*')">*</button>
             </div>
-
+        </div>
+        <div class="col-9 col-12">
             <div class="calculator4">
                 <button onclick="soma('/')">/</button>
                 <button onclick="soma('+')">+</button>
                 <button onclick="soma('-')">-</button>
                 <button onclick="calculate()">=</button>
             </div>
+        </div>
+    </div>
     </section>
 
             <button onclick="limpar()" class="clear_but">Clear</button>
