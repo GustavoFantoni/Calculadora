@@ -1,60 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <!-- Importação do Framework BULMA -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 </head>
 <body>
-    <header>
-        <script src="index.js"></script>
-    </header>
-
-    <main>
-    <div class="box"></div>
-
-    <section class="principal">
-        <input type="text" id="result" readonly>
-    <div class="flex">
-            <div class="calculator1">
-                <button onclick="soma(7)">7</button>
-                <button onclick="soma(4)">4</button>
-                <button onclick="soma(1)">1</button>
-                <button onclick="soma(0)">0</button>
-            </div>
-
-            <div class="calculator2">
-                <button onclick="soma(8)">8</button>
-                <button onclick="soma(5)">5</button>
-                <button onclick="soma(2)">2</button>
-                <button onclick="soma('.')">.</button>
-            </div>
-    </div>
-    <div class="flex2">
-        <div class="col-6 col-9">
-            <div class="calculator3">
-                <button onclick="soma(9)">9</button>
-                <button onclick="soma(6)">6</button>
-                <button onclick="soma(3)">3</button>
-                <button onclick="soma('*')">*</button>
-            </div>
-        </div>
-        <div class="col-9 col-12">
-            <div class="calculator4">
-                <button onclick="soma('/')">/</button>
-                <button onclick="soma('+')">+</button>
-                <button onclick="soma('-')">-</button>
-                <button onclick="calculate()">=</button>
-            </div>
-        </div>
-    </div>
-    </section>
-
-            <button onclick="limpar()" class="clear_but">Clear</button>
+    <div class="columns is-mobile is-flex is-justify-content-center" style="padding: 15px;">
         
-    </main>
-
+        <div class="column is-11">
+            <div class="row">
+                <h1 style="font-size: 30px;">Calculadora do Tobias</h1>
+                <h3>Olá pessoal! Este é o meu projeto de calculadora, e também meu primeiro projeto código aberto!</h3>
+                <h3>- Ajuste o navegador para testar a função de responsividade.</h3>
+                <h3>- Se precisar entrar em contato comigo, envie um e-mail para <a href="mailto:tobias.fermiano@unifebe.edu.br">tobias.fermiano@unifebe.edu.br</a>
+                </h3>
+                <hr style="color: rgb(118, 118, 118);">
+                <br>
+            </div>
+            <div class="row">
+                <input id="display" type="text" value="" readonly style="font-size: 33px; width: 370px; text-align: right;">
+            </div>
+            <div class="row">
+                <button onclick="addToOpenParenthesis()"> ( </button>
+                <button onclick="addToCloseParenthesis()"> ) </button>
+                <button onclick="clearDisplay()">C</button>
+                <button onclick="backspace()">←</button>
+            </div>
+            <div class="row">
+                <button onclick="addToDisplay('9')">9</button>
+                <button onclick="addToDisplay('8')">8</button>
+                <button onclick="addToDisplay('7')">7</button>
+                <button onclick="addToDisplay('/')">/</button>
+            </div>
+            <div class="row">
+                <button onclick="addToDisplay('6')">6</button>
+                <button onclick="addToDisplay('5')">5</button>
+                <button onclick="addToDisplay('4')">4</button>
+                <button onclick="addToDisplay('*')">*</button>
+            </div>
+            <div class="row">
+                <button onclick="addToDisplay('3')">3</button>
+                <button onclick="addToDisplay('2')">2</button>
+                <button onclick="addToDisplay('1')">1</button>
+                <button onclick="addToDisplay('-')">-</button>
+            </div>
+            <div class="row">
+                <button onclick="addToDisplay('.')">.</button>
+                <button onclick="addToDisplay('0')">0</button>
+                <button onclick="addToDisplay('+')">+</button>
+                <button onclick="calculateResult('%')">=</button>
+            </div>
+        </div>
+    </div>
+    <!-- Chamada do arquivo javascript -->
+    <script src="index.js"></script>
 </body>
 </html>
