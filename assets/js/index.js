@@ -14,8 +14,10 @@ class Calculator {
         try {
             this.result = eval(this.currentInput);
             this.display.value = this.result;
+            this.currentInput = this.display.value // Agora, o resultado anterior é adicionado ao currentInput
         } catch (error) {
             this.display.value = 'Erro';
+            this.currentInput = '' // Quando ocorre um erro, agora valor da expressão é zerado
         }
     }
 
