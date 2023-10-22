@@ -6,18 +6,24 @@ class Calculator {
     }
 
     addToDisplay(value) {
-        this.currentInput += value;
-        this.display.value = this.currentInput;
+        this.currentInput += value; // Valor usado nos cálculos
+
+        // Substituir '*' por '×' e '/' por '÷' apenas na string exibida no visor
+        this.inputString = this.display.value + value;
+        this.inputString = this.inputString.replace(/\*/g, '×');
+        this.inputString = this.inputString.replace(/\//g, '÷');
+
+        this.display.value = this.inputString;
     }
 
     calculateResult() {
         try {
             this.result = eval(this.currentInput);
             this.display.value = this.result;
-            this.currentInput = this.display.value // Agora, o resultado anterior é adicionado ao currentInput
+            this.currentInput = this.display.value;
         } catch (error) {
             this.display.value = 'Erro';
-            this.currentInput = '' // Quando ocorre um erro, agora valor da expressão é zerado
+            this.currentInput = '';
         }
     }
 
@@ -29,7 +35,8 @@ class Calculator {
 
     backspace() {
         this.currentInput = this.currentInput.slice(0, -1);
-        this.display.value = this.currentInput;
+        this.inputString = this.inputString.slice(0, -1);
+        this.display.value = this.inputString
     }
 }
 
