@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/index.css">
     <!-- Importação do Framework BULMA -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 </head>
@@ -35,29 +35,29 @@
                 <button onclick="addToDisplay('9')">9</button>
                 <button onclick="addToDisplay('8')">8</button>
                 <button onclick="addToDisplay('7')">7</button>
-                <button onclick="addToDisplay('/')">/</button>
+                <button onclick="addToDisplay(' / ')">&divide;</button>
             </div>
             <div class="row">
                 <button onclick="addToDisplay('6')">6</button>
                 <button onclick="addToDisplay('5')">5</button>
                 <button onclick="addToDisplay('4')">4</button>
-                <button onclick="addToDisplay('*')">*</button>
+                <button onclick="addToDisplay(' * ')">&times;</button>
             </div>
             <div class="row">
                 <button onclick="addToDisplay('3')">3</button>
                 <button onclick="addToDisplay('2')">2</button>
                 <button onclick="addToDisplay('1')">1</button>
-                <button onclick="addToDisplay('-')">-</button>
+                <button onclick="addToDisplay(' - ')">&minus;</button>
             </div>
             <div class="row">
                 <button onclick="addToDisplay('.')">.</button>
                 <button onclick="addToDisplay('0')">0</button>
-                <button onclick="addToDisplay('+')">+</button>
-                <button onclick="calculateResult('%')">=</button>
+                <button onclick="addToDisplay(' + ')">&plus;</button>
+                <button onclick="calculateResult('')">&equals;</button>
             </div>
         </div>
     </div>
     <!-- Chamada do arquivo javascript -->
-    <script src="index.js"></script>
+    <script src="./assets/js/index.js"></script>
 </body>
 </html>
