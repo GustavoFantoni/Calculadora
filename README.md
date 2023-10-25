@@ -10,8 +10,9 @@ Criação de uma calculadora convencional, apenas utilizando HTML5, CSS3 e JS!
 Estou testando minhas habilidades, o projeto ainda está em desenvolvimento pois ainda não finalizei.
 Se sugerir alguma melhoria crie um fork de meu projeto e me reenvie, ficarei muito feliz com o seu feedback.
 Até mais galera 🖖
+#
 
-<h1>Classe Calculator</h1>
+<h2>Classe Calculator</h2>
 
 <p>A classe Calculator é responsável por gerenciar a lógica da calculadora.</p>
 
